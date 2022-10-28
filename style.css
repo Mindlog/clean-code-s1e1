@@ -1,53 +1,64 @@
 /* Basic Style */
+
 body {
   margin: 0;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .main {
   width: 100%;
   height: auto;
   min-height: 100vh;
   background-color: #f8f8f8;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header-img {
   width: 100%;
 }
+
 .more-info {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header {
     text-align: center;
   }
 }
+
 .content {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
+
 .row-wrapper {
   display: flex;
 }
+
 .task-wrapper {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
+
 .item-task {
-  list-style:none;
+  list-style: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -57,10 +68,13 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
+
 /* Heading */
+
 .title-section {
   color: #333;
   font-weight: 700;
@@ -70,41 +84,46 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .task-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .task-input:focus {
   color: #333;
 }
 
 /* New Task */
+
 .add-title {
   display: block;
   margin: 0 0 20px;
 }
+
 .new-task {
   width: 318px;
 }
 
 /* Task list */
+
 .item-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .item-task > * {
   vertical-align: middle;
 }
@@ -112,40 +131,46 @@ body {
 .task-checkbox {
   margin: 0 10px;
 }
+
 .task-title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task-input {
-  width: 226px
+  width: 226px;
 }
+
 .btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .btn-delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .completed-title {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 .task-input {
-  display:none
+  display: none;
 }
 
 .edit-mode .task-input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px;
 }
 
 .edit-mode .task-title {
-  display:none;
+  display: none;
 }
