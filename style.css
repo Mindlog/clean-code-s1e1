@@ -6,7 +6,8 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.main {
+.page {
+  padding: 8px;
   width: 100%;
   height: auto;
   min-height: 100vh;
@@ -20,21 +21,15 @@ body {
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.more-info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-  .header {
-    text-align: center;
-  }
-}
-
-.content {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -46,16 +41,16 @@ body {
   flex-grow: 1;
 }
 
-.row-wrapper {
+.new-item__wrapper {
   display: flex;
 }
 
-.task-wrapper {
+.task__wrapper {
   margin: 0;
   padding: 0px;
 }
 
-.item-task {
+.task__item {
   list-style: none;
 }
 
@@ -75,7 +70,7 @@ body {
 
 /* Heading */
 
-.title-section {
+.section__name {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +80,7 @@ body {
   text-transform: uppercase;
 }
 
-.task-input {
+.item__enter {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,79 +93,90 @@ body {
   color: #888;
 }
 
-.task-input:focus {
+.item__enter:focus {
   color: #333;
 }
 
 /* New Task */
 
-.add-title {
+.new-item__title {
   display: block;
   margin: 0 0 20px;
 }
 
-.new-task {
+.new-item {
   width: 318px;
 }
 
 /* Task list */
 
-.item-task {
+.task__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.item-task > * {
+.task__item > * {
   vertical-align: middle;
 }
 
-.task-checkbox {
+.item__checkbox {
   margin: 0 10px;
 }
 
-.task-title {
+.item__title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-input {
+.item__enter {
   width: 226px;
 }
 
-.btn-delete img {
+.btn--remove img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn-delete img:hover {
+.btn--remove img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-.completed-title {
+.item__title--completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.task-input {
+.task__item .item__enter {
   display: none;
 }
 
-.edit-mode .task-input {
+.task__item--edit .item__enter {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task-title {
+.task__item--edit .item__title {
   display: none;
+}
+
+/* Media */
+
+@media (max-width: 768px) {
+
+  .header {
+    text-align: center;
+  }
+
 }
